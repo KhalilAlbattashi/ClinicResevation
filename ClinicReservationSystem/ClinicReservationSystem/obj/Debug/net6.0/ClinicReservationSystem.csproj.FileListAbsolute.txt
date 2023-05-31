@@ -1,0 +1,15 @@
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\obj\Debug\net6.0\ClinicReservationSystem.csproj.AssemblyReference.cache
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\obj\Debug\net6.0\ClinicReservationSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\obj\Debug\net6.0\ClinicReservationSystem.AssemblyInfoInputs.cache
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\obj\Debug\net6.0\ClinicReservationSystem.AssemblyInfo.cs
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\obj\Debug\net6.0\ClinicReservationSystem.csproj.CoreCompileInputs.cache
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\bin\Debug\net6.0\ClinicReservationSystem.exe
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\bin\Debug\net6.0\ClinicReservationSystem.deps.json
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\bin\Debug\net6.0\ClinicReservationSystem.runtimeconfig.json
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\bin\Debug\net6.0\ClinicReservationSystem.dll
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\bin\Debug\net6.0\ClinicReservationSystem.pdb
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\obj\Debug\net6.0\ClinicReservationSystem.dll
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\obj\Debug\net6.0\refint\ClinicReservationSystem.dll
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\obj\Debug\net6.0\ClinicReservationSystem.pdb
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\obj\Debug\net6.0\ClinicReservationSystem.genruntimeconfig.cache
+C:\Users\albat\OneDrive\Desktop\C#\ClinicReservationSystem\ClinicReservationSystem\obj\Debug\net6.0\ref\ClinicReservationSystem.dll
