@@ -36,14 +36,22 @@ namespace ClinicReservationSystem
         }
         public void DisplayDoctors()
         {
+            int count = 0;
             Console.WriteLine("--------------Available Doctors--------------");
             foreach (Doctor doctor in doctors)
             {
-                Console.WriteLine($"Doctor Name: {doctor.name}, Specialization: {doctor.specialization}");
+                Console.WriteLine($"{count + 1}. Doctor Name: {doctor.name}, Specialization: {doctor.specialization}");
+                count++;
             }
             Console.WriteLine("---------------------------------------------");
 
         }
+
+        public Doctor GetDoctor(int index)
+        {
+                return doctors[index];
+        }
+            
 
         public void DisplayPatients()
         {

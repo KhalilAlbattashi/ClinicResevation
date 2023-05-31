@@ -10,46 +10,75 @@ namespace ClinicReservationSystem
         public static void Main(string[] args)
         {
             Clinic clinic = new Clinic();
-
+            clinic.OnAppointmentBooked += Clinic_AppointmentBookedEvent;
             // Create doctors
             Doctor doctor1 = new Doctor("Dr. Smith", "General Practitioner");
             Doctor doctor2 = new Doctor("Dr. Jones", "Pediatrician");
+            Doctor doctor3 = new Doctor("Dr. James", "Orthopedics");
+            Doctor doctor4 = new Doctor("Dr. Camron", "Family medicine");
+            Doctor doctor5 = new Doctor("Dr. Mazin", "Dermatology");
+            Doctor doctor6 = new Doctor("Dr. Ahmed", "Neurosurgery");
 
-            // Create patients
-            Patient patient1 = new Patient("John Doe", 30, "123-456-7890");
-            Patient patient2 = new Patient("Jane Doe", 20, "987-654-3210");
-            Patient patient3 = new Patient("Jo Smith", 30, "123-456-7890");
-
-
-            // Register patients and doctors
             clinic.RegisterDoctors(doctor1);
             clinic.RegisterDoctors(doctor2);
+            clinic.RegisterDoctors(doctor3);
+            clinic.RegisterDoctors(doctor4);
+            clinic.RegisterDoctors(doctor5);
+            clinic.RegisterDoctors(doctor6);
 
-            
-            //Patient patient4 = new Patient(name, age, number);
-            clinic.RegisterPatient(patient1);
-            clinic.RegisterPatient(patient2);
-            clinic.RegisterPatient(patient3);
-            // Display the list of doctors and registered patients
-            clinic.DisplayDoctors();
-            clinic.DisplayPatients();
-            DateTime d = DateTime.Parse("Friday, 29 May 2015");
-            DateTime d1 = DateTime.Parse("Wednesday, 31 May 2023");
-
-            
+            Console.WriteLine("1) Display All Available Doctors\n2) Display Patients\n3) Book An Appointment");
 
 
-            //Console.WriteLine(d.DayOfWeek.ToString());
-            
-            
+            while (true)
+            {
+                string option = Console.ReadLine();
+                
 
-            clinic.OnAppointmentBooked += Clinic_AppointmentBookedEvent;
-            clinic.AddAppointment(patient1, doctor1, d1);
+                switch (option)
+                {
+                    case "1":
+                        clinic.DisplayDoctors();
+                        break;
+                    case "2":
+                        clinic.DisplayPatients();
+                        break;
+                    case "3":
+                        Console.WriteLine("Enter The patient name: ");
+                        string name = Console.ReadLine();
+                        Console.WriteLine("Enter the Patient Age: ");
+                        //string sAge = Console.ReadLine();
+                        int Age = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter Patient Contact Number");
+                        string ContactNumber =  Console.ReadLine();
+                        Patient patient = new Patient(name, Age, ContactNumber);
 
-            //Appointment b = new Appointment(patient2, doctor2, d1);
-            //Console.ForegroundColor = ConsoleColor.White;
+
+                        Console.WriteLine("Enter a date for the appointment dddd, dd MMMM yyyy");
+                        string sdate = Console.ReadLine();
+                        DateTime date = DateTime.Parse(sdate);
+
+                        
+
+                        Console.WriteLine("Enter the Doctor Number from 1 - 6");
+                        //string sDoc = Console.ReadLine();
+                        
+                        int DocNo = int.Parse(Console.ReadLine());
+                        if(DocNo > 0 && DocNo < 7)
+                        {
+                            clinic.AddAppointment(patient, clinic.GetDoctor(DocNo - 1), date);
+                        }
+                        else
+                        {
+                            Console.WriteLine("invalid option");
+                        }
+
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Option");
+                        break;
+                }
+            }
         }
-
         private static void Clinic_AppointmentBookedEvent(Appointment a)
         {
             //Console.WriteLine(a);
